@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>9.html</title>
+	</head>
+	<body>
+		<h1>9.html</h1>
+		
+		<p id="myText"></p>
+		
+		<script src="/socket.io/socket.io.js"></script>
+		<div id="myDiv"> </div>
+		<input id="inputText" placeholder="Type Message" type="text" name="msg"></input>
+		<button onclick="sendMsg()">Send Message</button>
+		
+		<script> 
+			var socket = io.connect("/"); 
+			
+			socket.on("connect", function(){
+				console.log("connected");
+			});
+			
+			socket.on("disconnect", function(){
+				console.log("disconnected");
+			});
+			
+			socket.on("msgSent", function(num){
+				document.getElementById("myText").innerHTML = num.toString();
+			});
+			
+			socket.on("messages", function(msg){
+				document.getElementById("myDiv").innerHTML += msg + "<br>";
+			});
+			
+			function sendMsg(){
+				data = document.getElementById("inputText").value;
+				document.getElementById("inputText").value = "";
+				socket.emit("userMsg", data);
+				document.getElementById("myDiv").innerHTML += data + "<br>";
+				
+			}
+		</script>
+	</body>
+</html>
