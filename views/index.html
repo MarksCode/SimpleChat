@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<!-- ************************************ -->
+
+	<head>
+		<meta charset="UTF-8">
+		<title>ChatWebsiteAttempt</title>
+		<link rel="stylesheet" href="index.css" type="text/css"/>
+		<script src="/libs/jquery-1.12.1.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="/libs/app.js"></script>              <!-- Major logic for app -->
+	</head>
+	
+<!-- ************************************ -->	
+	<body>
+	
+		<div id="backdiv">                                <!-- Div for background color of website -->
+
+			<div id="nameDiv">                            <!-- Div for login button and heading -->
+				<input id="nameBox" maxlength="10" placeholder="Name" size="11">
+				<button id="loginButton" onclick="login()">Login</button>
+				<div id="titleDiv"><h1>Live Chat</h1></div>
+			</div>
+			
+			<div id="chattersBox">                        <!-- Div for displaying users online -->
+				<h3>Online:</h3>
+				<div id="chattersDiv">
+					<table id="chattersTable"></table>
+				</div>
+			</div>
+			
+			<div id="msgBox">                             <!-- Div for list of messages -->
+				<div id="msgBoxMargin"></div>
+				<div id="msgDiv">
+					<ul id="msgList">
+					<ul>
+				</div>
+			</div>
+			
+			<div id="msgInputDiv">                        <!-- Div for write message input -->
+				<center><input id="msgInput" placeholder="Login to chat!" disabled></input></center>
+			</div>
+		</div>
+
+	</body>
+
+<!-- ************************************ -->	
+
+</html>

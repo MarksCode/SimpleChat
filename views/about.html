@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ChatWebsiteAbout</title>
+		<script src="backend.js"></script>
+	</head>
+	<body>
+		<script src="/socket.io/socket.io.js"></script>
+		<h1>About</h1>
+		<script>
+			var socket = io.connect('http://localhost:8080/about');
+		</script>
+	</body>
+</html>

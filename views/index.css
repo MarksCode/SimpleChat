@@ -1,0 +1,124 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: "Didot LT STD";
+}
+
+h3 {
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font-family: "Didot";
+}
+
+td {
+	font-family: "Didot";
+}
+
+li {
+	font-family: "Hoefler Text";
+	font-size: 20px;
+	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-left: 30px;
+	padding-right: 0px;
+	border-bottom: 2px solid #3399FF;
+	border-left: 2px solid #3399FF;
+}
+
+#backdiv {
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	background: linear-gradient(to bottom, #00FFFF, #3399FF);
+	overflow: auto;
+}
+
+#nameDiv {
+	margin-top: 10px;
+	margin-left: 10%;
+}
+
+#titleDiv {
+	margin-left: 25%;
+	display: inline-block;
+	text-align: center;
+}
+
+#nameBox {
+	background-color: #00FFFF;
+	height: 20px;
+	font-size: 18px;
+}
+
+#loginButton {
+	height: 25px;
+	font-size: 18px;
+}
+
+#chattersBox {
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	height: 200px;
+	width: 15%;
+	border: 2px solid #330099;
+}
+
+#chattersDiv {
+	height: calc(100% - 30px);
+	overflow: scroll;
+	text-align: center;
+}
+
+#chattersTable {
+	margin: 0 auto; 
+	text-align: left;
+}
+
+#msgBox {
+	float: right;
+	margin-top: 20px;
+	margin-right: 8%;
+	height: 200px;
+	width: 70%;
+	border: 2px solid #330099;
+	border-bottom: none;
+	overflow: hidden;
+}
+
+#msgBoxMargin {
+	height: 10%;
+}
+
+#msgDiv {
+	margin-left: -50px;
+	height: 90%;
+	overflow: scroll;
+}
+
+#msgList {
+	list-style-type: none;
+}
+
+#msgInputDiv {
+	height: 12%;
+	width: 70%;
+	border: 2px solid #330099;
+	border-top: none;
+	margin-right: 8%;
+	float:right;
+}
+
+#msgInput {
+	font-family: "Didot";
+	background-color: rgba(255,255,255,.5);
+	width: 80%;
+	line-height: 50px;
+	font-size: 25px;
+	margin-top: 20px;
+	padding: 0;
+}
